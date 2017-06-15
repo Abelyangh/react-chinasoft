@@ -1,0 +1,44 @@
+@import "~susy/sass/_susy";
+
+$susy: (
+  /* Tells Susy to use 12 columns */
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1120px */
+  // container: 1120px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box
+);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+.main {
+  @include container;
+}
+
+.body {
+  @include span(9);
+  min-height: 900px;
+}
+
+.sidebar {
+  @include span(2);
+  border-right: solid 1px #d9d9d9;
+  margin-top: 75px;
+  min-height: 900px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#footer-container {
+  padding-top: 60px;
+  width: 100%;
+}
+
+.richtext {
+  iframe, img, object {
+    max-width: 100%;
+  }
+}
