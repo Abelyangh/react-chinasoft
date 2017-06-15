@@ -6,4 +6,9 @@ export function goBack(){
   }
 }
 
+export function goToAddAccount(){
+  return (dispatch, getState) => {
+    dispatch(push('/accounts/add'))
+  }
+}
 
