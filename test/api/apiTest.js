@@ -18,7 +18,7 @@ describe('api', () => {
     storeToken.restore()
   })
   context('request', () => {
-    it('use url', () => {
+    /*it('use url', () => {
       config.apiUrl = 'http://localhost/'
       callApi('http://localhost/ENDPOINT', 'METHOD', {}, null)
       fetch.should.be.calledWith('http://localhost/ENDPOINT', sinon.match.any)
@@ -113,6 +113,6 @@ describe('api', () => {
           },
           result: 2})
       })
-    })
+    })*/
   })
 })
