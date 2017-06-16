@@ -14,7 +14,7 @@ export default ({store}) => {
   return (
     <Router history={enhancedHistory}>
       <Route path="/signin" component={SignInPage}/>
-
+      
 
       <Route path="/" component={Page}>
         <Route component={Authentication}>

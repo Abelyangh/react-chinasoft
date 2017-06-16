@@ -28,7 +28,7 @@ export default function callApi(endpoint, method, data, schema) {
     }
   }
 
-  return fetch(fullUrl, options)
+  /*return fetch(fullUrl, options)
     .then(response => response.json().then(json =>  ({json, response}) ))
     .then(({json, response}) => {
       let token = {
@@ -47,5 +47,8 @@ export default function callApi(endpoint, method, data, schema) {
       const camelizedJson = camelizeKeys(json)
 
       return schema ? normalize(camelizedJson, schema) : camelizedJson
-    })
+    })*/
+  return new Promise((resolve, reject) => {
+    resolve({});
+  });
 }
